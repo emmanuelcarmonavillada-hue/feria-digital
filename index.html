@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Feria Digital - El Progreso</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Feria Digital – El Progreso</h1>
+  <p>Espacio comunitario para mostrar cultivos, logros escolares y contacto de la vereda.</p>
+
+  <nav>
+    <a href="#cultivos">Cultivos</a>
+    <a href="#galeria">Galería</a>
+    <a href="#logros">Logros escolares</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- CULTIVOS -->
+  <section id="cultivos">
+    <h2>Cultivos / Productos</h2>
+
+    <div class="filtros">
+      <button onclick="filtrar('todos')">Todos</button>
+      <button onclick="filtrar('fruta')">Frutas</button>
+      <button onclick="filtrar('grano')">Granos</button>
+      <button onclick="filtrar('hortaliza')">Hortalizas</button>
+    </div>
+
+    <div class="grid">
+
+      <div class="card fruta">
+        <h3>Banano</h3>
+        <p>Cultivo tropical importante para la economía local.</p>
+        <button onclick="toggleInfo(this)">Ver más</button>
+        <p class="extra">Se produce en clima cálido y es de exportación.</p>
+      </div>
+
+      <div class="card grano">
+        <h3>Café</h3>
+        <p>Uno de los principales productos de la vereda.</p>
+        <button onclick="toggleInfo(this)">Ver más</button>
+        <p class="extra">Se cultiva en montañas y tiene alta calidad.</p>
+      </div>
+
+      <div class="card hortaliza">
+        <h3>Cacao</h3>
+        <p>Producto base para chocolate artesanal.</p>
+        <button onclick="toggleInfo(this)">Ver más</button>
+        <p class="extra">Muy valorado en mercados nacionales.</p>
+      </div>
+
+    </div>
+  </section>
+
+ <!-- GALERÍA -->
+<section id="galeria">
+  <h2>Galería de fotos</h2>
+
+  <div class="galeria">
+    
+    <img src="https://agriculturadelasamericas.com/wp-content/uploads/2025/11/CafedeColombia.webp" alt="cultivo de cacao">
+    
+    <img src="https://radionacional-v3.s3.amazonaws.com/s3fs-public/node/article/field_image/Asociaci%C3%B3n%20de%20Bananeros%20de%20Colombia.jpg" alt="cultivo de banano">
+    
+    <img src="https://imagenes.portafolio.co/files/image_600_455/uploads/2016/02/05/56b4f11f9e4f8.jpeg" alt="cultivo de café">
+
+  </div>
+</section>
+
+  <!-- LOGROS -->
+<section id="logros">
+  <h2>Logros escolares</h2>
+
+  <p>
+    La Institución Educativa de la Vereda El Progreso ha venido fortaleciendo
+    proyectos productivos y ambientales que integran a estudiantes, docentes y familias.
+  </p>
+
+  <ul>
+    <li>
+      <strong> Huerta escolar sostenible:</strong>
+      Durante el año escolar, los estudiantes desarrollaron una huerta orgánica
+      donde se cultivaron productos como tomate, lechuga y cilantro. Este proyecto
+      nació como una iniciativa para mejorar la alimentación saludable dentro de la escuela
+      y enseñar prácticas agrícolas sostenibles. Además, se reutilizaron materiales como botellas
+      plásticas para sistemas de riego artesanal.
+    </li>
+
+    <li>
+      <strong> Participación en la Feria Agrícola Municipal:</strong>
+      La escuela representó a la vereda en la feria municipal con una muestra de cultivos
+      tradicionales como café, banano y cacao. Los estudiantes prepararon exposiciones,
+      maquetas y muestras reales de los productos. Este evento permitió fortalecer el orgullo
+      por el trabajo rural y el reconocimiento del esfuerzo de las familias campesinas.
+    </li>
+
+    <li>
+      <strong> Proyecto de investigación agrícola escolar:</strong>
+      Un grupo de estudiantes realizó un estudio sobre las mejores condiciones de cultivo del cacao
+      en la región. Analizaron el tipo de suelo, el clima y el uso de fertilizantes naturales.
+      Este proyecto fue presentado en una jornada académica y recibió reconocimiento por su enfoque
+      científico y su aporte al conocimiento local.
+    </li>
+
+    <li>
+      <strong> Campaña ambiental “Vereda Limpia”:</strong>
+      Se llevaron a cabo jornadas de limpieza y sensibilización ambiental en toda la comunidad.
+      Los estudiantes recorrieron caminos rurales recogiendo residuos y enseñando a las familias
+      la importancia del reciclaje y el cuidado del agua. Esta campaña ayudó a mejorar la conciencia
+      ambiental en la vereda.
+    </li>
+  </ul>
+
+  <p>
+    Estos logros reflejan el compromiso de la comunidad educativa con el desarrollo rural,
+    la sostenibilidad y el aprendizaje práctico basado en la realidad de la vereda.
+  </p>
+</section>
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+
+    <form id="formulario">
+      <input type="text" id="nombre" placeholder="Nombre">
+      <input type="text" id="celular" placeholder="Celular (10 dígitos)">
+      <textarea id="mensaje" placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p id="resultado"></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Feria Digital – Vereda El Progreso © 2026</p>
+</footer>
+
+<script src="js/funciones.js"></script>
+</body>
+</html>
